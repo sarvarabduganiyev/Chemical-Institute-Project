@@ -15,3 +15,22 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 10,
   });
+  const universitetSelect = document.querySelector(".universitet-select__div");
+  const arrow1 = document.querySelector(".arrow1");
+  const universitet__menu = document.querySelector(".universitet__menu");
+  const menus = document.querySelector(".menus");
+
+
+
+  // universitetSelect.addEventListener("click", () => {
+  //   universitetSelect.classList.toggle("hidden");
+  // })
+
+  window.addEventListener("click",(e) => {
+    if(e.target.closest(".universitet__menu")){
+      universitetSelect.classList.toggle("hidden");
+    }
+    else{
+      universitetSelect.classList.add("hidden");
+          }
+  })

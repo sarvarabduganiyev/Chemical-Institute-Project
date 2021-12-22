@@ -14,10 +14,10 @@
 <body>
     <div>
         <header>
-            <div class="w-11/12 mx-auto mt-2 md:flex justify-between  items-center">
+            <div class="w-11/12 mx-auto mt-2 flex justify-between  items-center">
                 <!-- emblema va nom -->
                 <div class="flex justify-center space-x-3 items-center">
-                    <img src="./img/Emblem_of_Uzbekistan 1.png" alt="gerb">
+                    <img class="emblem"  src="./img/Emblem_of_Uzbekistan 1.png" alt="gerb">
                     <div>
                         <h1 class="header__h1">Uzbekistan chemical Institute</h1>
                         <p class="header__p"> O`zbekiston kimyo texnologiyalari Instituti</p>
@@ -36,7 +36,7 @@
                     </form>
                 </div>
                 <!-- Qidiruv tizimi tugadi -->
-                <div class="flex flex-col space-y-1">
+                <div class="flex flex-col space-y-1  telefon-email">
                     <!-- telefon, email -->
                     <div class="flex ">
                         <img src="./img/carbon_phone-voice.png" alt="tel">
@@ -49,19 +49,35 @@
                     <!-- telefon, email tugashi -->
 
                 </div>
-                <div class="space-y-1">
-                    <h3 class="header__uzb">UZB</h3>
-                    <h3 class="header__rus">РУС</h3>
+                <div class="space-y-1  flex justify-center items-center">
+                    <div class="flex flex-col justify-center items-center tillarUzbRus">
+                        <h3 class="header__uzb">UZB</h3>
+                        <h3 class="header__rus">РУС</h3>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 hamburger w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
                 </div>
-
+               
             </div>
             <div class="w-11/12 mt-3 mx-auto  md:flex justify-between  items-center">
-                <div>
-                    <ul class="flex space-x-3">
-                        <li
-                            class="flex header__li__active justify-center items-center space-x-4  herder__li   py-1 px-3 rounded ">
-                            <a href="#">Universitet</a>
-                            <img class="w-4 h-3" src="./img/arrow.png" alt="arrow">
+                <div class="menus">
+                    <ul class="flex menusUl space-x-3">
+                        <li class=" header__li__active relative  herder__li   py-1  rounded ">
+                           <div class="flex space-x-3 universitet__menu px-1 justify-center items-center">
+                            <a class="pl-1" href="#">Universitet</a>
+                            <img class="w-4 h-3 arrow1" src="./img/arrow.png" alt="arrow">
+                           </div>
+                           <div class="rounded-r-2xl py-2 hidden universitet-select__div rounded-b-2xl absolute z-10 mt-1 bg-white">
+                               <ul class="space-y-3  w-52">
+                                   <li><a class="text-black pl-2 py-1 universitet-select  " href="#">Biz haqimizda</a></li>
+                                   <li><a class="text-black pl-2 py-1 universitet-select " href="#">Jurnal</a></li>
+                                   <li><a class="text-black pl-2 py-1 universitet-select " href="#">Ilmiy kengash</a></li>
+                                   <li><a class="text-black pl-2 py-1 universitet-select " href="#">Rasmdagi lavhalar</a></li>
+                               </ul>
+                           </div>
                         </li>
                         <li class="herder__li   py-1 px-2 rounded "><a href="#">Rahbariyat</a></li>
                         <li class="herder__li   py-1 px-2 rounded "><a href="#">Yangiliklar</a></li>
@@ -105,9 +121,9 @@
                 <div class="section__3__gridd  ">
                     <div class="grid__70 p-3">
                         <div class="card">
-                            <div class="grid grid-cols-3 gap-3 ">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 ">
                                 <div
-                                    class=" flex relative justify-center rounded-2xl rounded-b-2xl overflow-hidden items-end section__3__card__1 ">
+                                    class=" flex relative justify-center rounded-2xl rounded-b-2xl  items-end section__3__card__1 ">
                                     <div class="section__3__card__1__content pb-3 absolute">
                                         <div class=" w-10/12 mx-auto">
                                             <h1 class="section__3__card__1__content__h1">16-shahar shifoxonasida omicron

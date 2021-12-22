@@ -16,7 +16,7 @@ body {
 }
 
 .header__h1 {
-    font-size: 28px;
+    /* font-size: 28px; */
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
@@ -99,7 +99,31 @@ body {
         #00489D;
     color: white;
     font-weight: normal;
+    border: none;
+    outline: none;
 }
+.header__li__active option{
+    /* padding: 0 15px; */
+    background-color: grey;
+
+}
+.universitet-select{
+    font-family: "Roboto";
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    transition: 0.3s all ease;
+    
+}
+.universitet-select:hover{
+    font-family: "Roboto";
+    background-color: #9F9F9F;
+    font-weight: 400;
+    color:white;
+   
+    
+}
+
 
 .header__li__active:hover {
     background-color:
@@ -277,4 +301,92 @@ border-radius: 0px 20px 20px 20px;
 }
 .swiper__bg__h3{
     font-size: 10px;
+}
+
+.universitet-select__div.active{
+    display:none;
+    
+}
+.hamburger{
+    display: none;
+
+}
+.tillarUzbRus{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1168px){
+
+
+/* .menus{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+    transition: all 0.3s ease;
+}
+.menusUl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+
+} */
+
+
+
+
+
+    .header__form{
+        display: none;
+    }
+    .telefon-email{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        
+    }
+    .tillarUzbRus{
+        display: none;
+    }
+    .header__h1{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        /* font-size: 25px; */
+        line-height: 25px;
+    }
+    .header__p{
+        font-size: 14px;
+    }
+   .emblem{
+       width: 50px;
+   }
+}
+@media (max-width:400px){
+    .header__h1{
+        font-size: 15px;
+        font-style: normal;
+        font-weight: normal;
+        /* font-size: 25px; */
+        line-height: 20px;
+    }
+    .header__p{
+        font-size: 10px;
+    }
+   .emblem{
+       width: 30px;
+   }
 }
