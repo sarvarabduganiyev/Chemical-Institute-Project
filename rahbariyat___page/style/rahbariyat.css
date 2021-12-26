@@ -1,0 +1,60 @@
+.rahbariyat__word {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  color: #002264;
+}
+.card__size {
+  width: 303px;
+  height: 245px;
+}
+
+.rahbariyat__card {
+  background: #cdcdcd;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+.rahbariyat__card__shrift {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  color: #000;
+  line-height: 28px;
+  text-align: center;
+}
+.bosh__sahifa__size {
+  font-size: 25px;
+}
+@media (max-width: 1235px) {
+  .rahbariyat__card {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .rahbariyat__word {
+    font-size: 42px;
+    line-height: 30px;
+  }
+  .bosh__sahifa__size {
+    font-size: 20px;
+  }
+
+  .rahbariyat__card__img {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 371px) {
+  .card__size {
+    width: 250px;
+    height: 300px;
+  }
+  .rahbariyat__card__shrift {
+    font-size: 15px;
+    color: #000;
+    line-height: 23px;
+  }
+}

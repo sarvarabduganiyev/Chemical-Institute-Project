@@ -1,44 +1,8 @@
-var swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  },
-});
-var swiper = new Swiper(".mySwiper2", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    // when window width is >= 320px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 4,
-    },
-    // when window width is >= 480px
-    786: {
-      slidesPerView: 3,
-      spaceBetween: 8,
-    },
-    // when window width is >= 640px
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
-  },
-});
 const universitetSelect = document.querySelector(".universitet-select__div");
 const arrow1 = document.querySelector(".arrow1");
 const universitet__menu = document.querySelector(".universitet__menu");
 const menus = document.querySelector(".menus");
 const body = document.querySelector("body");
-
-// universitetSelect.addEventListener("click", () => {
-//   universitetSelect.classList.toggle("hidden");
-// })
 
 window.addEventListener("click", (e) => {
   if (e.target.closest(".universitet__menu")) {
@@ -48,7 +12,6 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Hamburger menu
 const hamburger = document.querySelector(".hamburger");
 const menusUl = document.querySelector(".menusUl");
 
