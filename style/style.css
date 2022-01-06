@@ -222,6 +222,30 @@ body {
   grid-template-columns: calc(70% - 10px) 30%;
   column-gap: 10px;
 }
+.home__elon{
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+.elonlar__home__page{
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 25px;
+color: #00489D;
+}
+.line__home__page{
+  width: 100%;
+  background: #00489D;
+  height: 1px;
+}
+.elonlar__text__home__page{
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+margin-bottom: 12px;
+}
 
 .section__3__card__1 {
   background: url("../img/portfolio.jpg") no-repeat;
@@ -583,6 +607,30 @@ body {
     flex-direction: column;
     align-items: initial;
   } */
+  .kok__odam{
+    display: none;
+  }
+  .kok__odam__jenskiy{
+    display: none;
+  }
+  .illustrator__box{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* width: 91.666667%; */
+   width: 70%;
+   margin: 0 auto;
+  }
+  /* .illustrator__1, .illustrator__2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr );
+    justify-content: center;
+    align-items: center;
+  } */
+  .illustrator__2{
+    margin-left: 15px;
+  }
   .menu__size {
     font-size: 16px;
     line-height: 18px;
@@ -714,6 +762,9 @@ body {
     flex-direction: column;
     align-items: initial;
   }
+  .home__elon{
+    margin-top: 30px;
+  }
   .hamburger {
     display: block;
   }
@@ -783,4 +834,13 @@ body {
     display: none;
   }
 }
-/* 1291 */
+@media(max-width:945px){
+  .card__h1__labaratories {
+  margin-top: 12px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .labaratoriya__svg{
+    
+  }
+}
