@@ -1,4 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -8,6 +11,9 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 var swiper = new Swiper(".mySwiper2", {
+  autoplay: {
+    delay: 3000,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
