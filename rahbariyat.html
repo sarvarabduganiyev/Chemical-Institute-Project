@@ -86,8 +86,20 @@
                 tillarUzbRus
               "
             >
-              <a href="#" class="header__uzb">UZB</a>
-              <a href="#" class="header__rus">РУС</a>
+              <!-- <a href="#" class="header__uzb">UZB</a>
+              <a href="#" class="header__rus">РУС</a> -->
+              <form class="header__lang header__lang--active" action="{% url 'set_language' %}" method="post">
+                <!-- {% csrf_token %} -->
+                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                <input name="language" type="hidden" value="uz" />
+                <input class="header__lang-link" type="submit" value="Uz" />
+              </form>
+              <form class="header__lang" action="{% url 'set_language' %}" method="post">
+                <!-- {% csrf_token %} -->
+                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                <input name="language" type="hidden" value="ru" />
+                <input class="header__lang-link" type="submit" value="Ru" />
+              </form>
             </div>
             <div>
               <button class="hamburger">
@@ -205,8 +217,20 @@
                   tillarUzbRus__menuda
                 "
               >
-              <a href="#" class="header__uzb ubuntu__fonts">UZB</a>
-              <a href="#" class="header__rus ubuntu__fonts">РУС</a>
+              <!-- <a href="#" class="header__uzb ubuntu__fonts">UZB</a>
+              <a href="#" class="header__rus ubuntu__fonts">РУС</a> -->
+              <form class="header__lang header__lang--active" action="{% url 'set_language' %}" method="post">
+                <!-- {% csrf_token %} -->
+                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                <input name="language" type="hidden" value="uz" />
+                <input class="header__lang-link" type="submit" value="Uz" />
+              </form>
+              <form class="header__lang" action="{% url 'set_language' %}" method="post">
+                <!-- {% csrf_token %} -->
+                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                <input name="language" type="hidden" value="ru" />
+                <input class="header__lang-link" type="submit" value="Ru" />
+              </form>
               </div>
               <div class="flex flex-col space-y-1 telefon-email__menuda">
                 <!-- telefon, email -->
@@ -256,10 +280,10 @@
              <div>
               <div class="rahbariyat__card flex sm:flex-row flex-col justify-center p-4 ">
                 <div  class="card__size rahbariyat__card__img  relative">
-                  <img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam">
+                  <a href="#" class="blok"><img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam"></a>
                 </div>
                 <div class="flex flex-col  justify-center">
-                  <h1 class="rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</h1>
+                  <a href="#" class="block rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</a>
                   <h3 style="color: #565656;" class="rahbariyat__card__shrift">Direktor</h3>
                   <div class="flex items-center space-y-2 space-x-3 pl-6">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,10 +313,10 @@
               <div>
                 <div class="rahbariyat__card flex  sm:flex-row flex-col justify-center p-4 ">
                   <div class="card__size rahbariyat__card__img relative">
-                    <img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam">
+                    <a href="#" class="blok"><img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam"></a>
                   </div>
                   <div class="flex flex-col  justify-center">
-                    <h1 class="rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</h1>
+                    <a href="#"  class="block rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</a>
                     <h3 style="color: #565656;" class="rahbariyat__card__shrift">Direktor</h3>
                     <div class="flex items-center space-y-2 space-x-3 pl-6">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -321,10 +345,10 @@
               <div>
                 <div class="rahbariyat__card flex sm:flex-row flex-col justify-center p-4 ">
                   <div  class="card__size rahbariyat__card__img  relative">
-                    <img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam">
+                    <a href="#" class="blok"><img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam"></a>
                   </div>
                   <div class="flex flex-col  justify-center">
-                    <h1 class="rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</h1>
+                    <a href="#" class="block rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</a>
                     <h3 style="color: #565656;" class="rahbariyat__card__shrift">Direktor</h3>
                     <div class="flex items-center space-y-2 space-x-3 pl-6">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -353,10 +377,10 @@
               <div>
                 <div class="rahbariyat__card flex sm:flex-row flex-col justify-center p-4 ">
                   <div  class="card__size rahbariyat__card__img  relative">
-                    <img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam">
+                    <a class="block" href="#"><img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam"></a>
                   </div>
                   <div class="flex flex-col  justify-center">
-                    <h1 class="rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</h1>
+                    <a href="#" class="block rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</a>
                     <h3 style="color: #565656;" class="rahbariyat__card__shrift">Direktor</h3>
                     <div class="flex items-center space-y-2 space-x-3 pl-6">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -385,10 +409,11 @@
               <div>
                 <div class="rahbariyat__card flex sm:flex-row flex-col justify-center p-4 ">
                   <div  class="card__size rahbariyat__card__img  relative">
-                    <img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam">
+                   <a href="#" class="block"><img class="absolute w-full h-full rounded-2xl object-fill" 
+                    src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam"></a>
                   </div>
                   <div class="flex flex-col  justify-center">
-                    <h1 class="rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</h1>
+                    <a href="#" class="block rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</a>
                     <h3 style="color: #565656;" class="rahbariyat__card__shrift">Direktor</h3>
                     <div class="flex items-center space-y-2 space-x-3 pl-6">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -417,10 +442,12 @@
               <div>
                 <div class="rahbariyat__card flex sm:flex-row flex-col justify-center p-4 ">
                   <div  class="card__size rahbariyat__card__img  relative">
-                    <img class="absolute w-full h-full rounded-2xl object-fill" src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam">
+                    <a href="#" class="blok"><img class="absolute w-full h-full rounded-2xl object-fill"
+                       src="https://i1.wp.com/digital-photography-school.com/wp-content/uploads/2019/05/1LJ1943.jpg?resize=1500%2C998&ssl=1" alt="rahbariyat__card__odam"></a>
                   </div>
                   <div class="flex flex-col  justify-center">
-                    <h1 class="rahbariyat__card__shrift">Ashurov Ramziddinboy Axmadaliyevich</h1>
+                    <a href="#" class="block rahbariyat__card__shrift">Ashurov Ramziddinboy
+                       Axmadaliyevich</a>
                     <h3 style="color: #565656;" class="rahbariyat__card__shrift">Direktor</h3>
                     <div class="flex items-center space-y-2 space-x-3 pl-6">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

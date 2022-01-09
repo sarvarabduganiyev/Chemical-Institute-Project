@@ -18,6 +18,26 @@ body {
   color: #00489d;
 }
 
+.header__lang {
+  border: 2px solid #00489d;
+  /* background-color: #00489d; */
+  background-color: white;
+  color: #00489d;
+  padding: 1px 6px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.header__lang--active,
+.header__lang:hover {
+  background: #00489d;
+  color: white;
+}
+.header__lang-link {
+  background-color: transparent;
+  cursor: pointer;
+}
 .header__h1 {
   font-style: normal;
   font-weight: normal;
@@ -33,7 +53,7 @@ body {
   width: 350px;
   padding: 10px 30px;
 }
-
+/* 
 .header__uzb {
   background: #00489d;
   color: white;
@@ -41,7 +61,7 @@ body {
   border-radius: 8px;
   border: 2px solid #00489d;
   transition: all 0.3s ease;
-}
+} */
 
 .header__uzb:hover {
   background-color: white;
@@ -218,7 +238,12 @@ body {
 .section__3__gridd {
   display: grid;
   align-items: start;
-
+  grid-template-columns: calc(70% - 10px) 30%;
+  column-gap: 10px;
+}
+.ill__gridd{
+  display: grid;
+  align-items: start;
   grid-template-columns: calc(70% - 10px) 30%;
   column-gap: 10px;
 }
@@ -782,8 +807,14 @@ width: 100%;
     flex-direction: column;
     align-items: initial;
   }
+  .ill__gridd{
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+  }
   .home__elon{
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    display: none;
   }
   .hamburger {
     display: block;

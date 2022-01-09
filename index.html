@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="./style/style.css" />
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
   <div>
     <header>
@@ -67,8 +66,20 @@
                 items-center
                 tillarUzbRus
               ">
-            <a href="#" class="header__uzb">UZB</a>
-            <a href="#" class="header__rus">РУС</a>
+            <!-- <a href="#" class="header__uzb">UZB</a>
+            <a href="#" class="header__rus">РУС</a> -->
+            <form class="header__lang header__lang--active" action="{% url 'set_language' %}" method="post">
+              <!-- {% csrf_token %} -->
+              <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+              <input name="language" type="hidden" value="uz" />
+              <input class="header__lang-link" type="submit" value="Uz" />
+            </form>
+            <form class="header__lang" action="{% url 'set_language' %}" method="post">
+              <!-- {% csrf_token %} -->
+              <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+              <input name="language" type="hidden" value="ru" />
+              <input class="header__lang-link" type="submit" value="Ru" />
+            </form>
           </div>
           <div>
             <button class="hamburger">
@@ -150,8 +161,20 @@
                   items-center
                   tillarUzbRus__menuda
                 ">
-              <a href="#" class="header__uzb ubuntu__fonts">UZB</a>
-              <a href="#" class="header__rus ubuntu__fonts">РУС</a>
+              <!-- <a href="#" class="header__uzb ubuntu__fonts">UZB</a>
+              <a href="#" class="header__rus ubuntu__fonts">РУС</a> -->
+              <form class="header__lang header__lang--active" action="{% url 'set_language' %}" method="post">
+                <!-- {% csrf_token %} -->
+                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                <input name="language" type="hidden" value="uz" />
+                <input class="header__lang-link" type="submit" value="Uz" />
+              </form>
+              <form class="header__lang" action="{% url 'set_language' %}" method="post">
+                <!-- {% csrf_token %} -->
+                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                <input name="language" type="hidden" value="ru" />
+                <input class="header__lang-link" type="submit" value="Ru" />
+              </form>
             </div>
             <div class="flex flex-col space-y-1 telefon-email__menuda">
               <!-- telefon, email -->
@@ -214,7 +237,7 @@
           <div class="grid__70  md:mt-0 mt-3 p-3">
             <div class="card">
               <div class="grid card__grid space-y-2 md:space-y-0   grid-cols-3 gap-3">
-                <button class="cursor-pointer">
+                <a href="#" class="cursor-pointer block">
                   <div style="background-image: url(./img/tarozi__logo.png);" class="
                     flex
                     relative
@@ -268,8 +291,8 @@
                       </div>
                     </div>
                   </div>
-                </button>
-                <button class="cursor-pointer">
+                </a>
+                <a href="#" class="cursor-pointer block">
                   <div style="background-image: url(./img/tarozi__logo.png);" class="
                     flex
                     relative
@@ -300,8 +323,8 @@
                     </div>
                   </div>
                   </div>
-                </button>
-                <button class="cursor-pointer">
+                </a>
+                <a href="#" class="cursor-pointer block">
                   <div style="background-image: url(./img/tarozi__logo.png);height: 400px;" class="
                     flex
                     relative
@@ -332,16 +355,15 @@
                     </div>
                   </div>
                   </div>
-                </button>
+                </a>
                 <!-- 1-card tugadi -->
               </div>
-              <div></div>
             </div>
             <!-- swiper news -->
             <div class="swiper rounded-2xl mt-3 mySwiper2 mySwiper_2">
               <div class="swiper-wrapper swiper-wrapper2">
                 <div class="swiper-slide swiper-slide_2">
-                  <div style="background-image: url(./img/rahbariyat__.png)" class="flex swiper__bg flex-col relative">
+                  <a href="#" style="background-image: url(./img/rahbariyat__.png)" class="block flex swiper__bg flex-col relative">
                     <div class="swiper__bg__content absolute bottom-0">
                       <div class="w-11/12 mx-auto mb-1 flex flex-col justify-between items-center h-full">
                         <h1  style="text-align:start" class="swiper__bg__h1 w-11/12 mx-auto ">
@@ -370,11 +392,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
-
                 <div class="swiper-slide swiper-slide_2">
-                  <div style="background-image: url(./img/gerb__logo.png)" class="swiper__bg flex flex-col relative">
+                  <a href="#" style="background-image: url(./img/gerb__logo.png)" class="swiper__bg block flex flex-col relative">
                     <div class="swiper__bg__content absolute bottom-0">
                       <div class="w-11/12 mx-auto mb-1 flex flex-col justify-between items-center h-full">
                         <h1  style="text-align:start" class="swiper__bg__h1 w-11/12 mx-auto ">
@@ -403,10 +424,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide swiper-slide_2">
-                  <div style="background-image: url(./img/rahbariyat__.png)" class="swiper__bg flex-col relative">
+                  <a href="#" style="background-image: url(./img/rahbariyat__.png)" class="block swiper__bg flex-col relative">
                     <div class="swiper__bg__content absolute bottom-0">
                       <div class="w-11/12 mx-auto mb-1 flex flex-col justify-between items-center h-full">
                         <h1  style="text-align:start" class="swiper__bg__h1 w-11/12 mx-auto ">
@@ -435,10 +456,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide swiper-slide_2">
-                  <div style="background-image: url(./img/rahbariyat__.png)" class="swiper__bg flex-col relative">
+                  <a href="#" style="background-image: url(./img/rahbariyat__.png)" class="block swiper__bg flex-col relative">
                     <div class="swiper__bg__content absolute bottom-0">
                       <div class="w-11/12 mx-auto mb-1 flex flex-col justify-between items-center h-full">
                         <h1  style="text-align:start" class="swiper__bg__h1 w-11/12 mx-auto">
@@ -467,10 +488,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide swiper-slide_2">
-                  <div style="background-image: url(./img/rahbariyat__.png)" class="swiper__bg flex-col relative">
+                  <a href="#" style="background-image: url(./img/rahbariyat__.png)" class="block swiper__bg flex-col relative">
                     <div class="swiper__bg__content absolute bottom-0">
                       <div class="w-11/12 mx-auto mb-1 flex flex-col justify-between items-center h-full">
                         <h1  style="text-align:start" class="swiper__bg__h1 w-11/12 mx-auto">
@@ -499,10 +520,10 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="swiper-slide swiper-slide_2">
-                  <div style="background-image: url(./img/rahbariyat__.png)" class="swiper__bg flex-col relative">
+                  <a href="#" style="background-image: url(./img/rahbariyat__.png)" class="block swiper__bg flex-col relative">
                     <div class="swiper__bg__content absolute bottom-0">
                       <div class="w-11/12 mx-auto mb-1 flex flex-col justify-between items-center h-full">
                         <h1 style="text-align:start" class="swiper__bg__h1 w-11/12 mx-auto">
@@ -531,7 +552,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-button-next swiper-button-next1"></div>
@@ -551,35 +572,6 @@
                   qisib o’tirvurin. Shu pulga marojni ob yesez yaxshi boladi
                   kamro gapirib korpro o’tlen. Kamro yeb ko’pro harakat
                   qiling. Shunday qilib qunduz bobo ertaklari...
-
-
-                </h1>
-              </div>
-              <!-- div 1 -->
-              <!-- <div
-                style="background-color: #4588d6"
-                class="rounded-xl text-white"
-              >
-              <h1 styel="font-size: 16px;" class="w-11/12 mx-auto my-2">
-                Covidga qarshi bir neshta vaksinalr turlari mavjud bo’lib
-                ularni birortasiyam foydali emasdur shuning uchun ko’zizzi
-                qisib o’tirvurin. Shu pulga marojni ob yesez yaxshi boladi
-                kamro gapirib korpro o’tlen. Kamro yeb ko’pro harakat
-                qiling. Shunday qilib qunduz bobo ertaklari...
-              </div> -->
-              <!-- div 1 tugasgu -->
-              <div style="background-color: #4588d6" class="rounded-xl text-white">
-                <div style="background: #00489d; font-size: 25px" class="rounded-xl p-2 accordion">
-                  <h1 class="__qator2">COVID uchun qaysi vaksina yaxshi?</h1>
-                </div>
-                <h1 styel="font-size: 16px;" class="w-11/12 panel mx-auto my-2">
-                  Covidga qarshi bir neshta vaksinalr turlari mavjud bo’lib
-                  ularni birortasiyam foydali emasdur shuning uchun ko’zizzi
-                  qisib o’tirvurin. Shu pulga marojni ob yesez yaxshi boladi
-                  kamro gapirib korpro o’tlen. Kamro yeb ko’pro harakat
-                  qiling. Shunday qilib qunduz bobo ertaklari...
-
-
                 </h1>
               </div>
               <div style="background-color: #4588d6" class="rounded-xl text-white">
@@ -592,8 +584,18 @@
                   qisib o’tirvurin. Shu pulga marojni ob yesez yaxshi boladi
                   kamro gapirib korpro o’tlen. Kamro yeb ko’pro harakat
                   qiling. Shunday qilib qunduz bobo ertaklari...
-
-
+                </h1>
+              </div>
+              <div style="background-color: #4588d6" class="rounded-xl text-white">
+                <div style="background: #00489d; font-size: 25px" class="rounded-xl p-2 accordion">
+                  <h1 class="__qator2">COVID uchun qaysi vaksina yaxshi?</h1>
+                </div>
+                <h1 styel="font-size: 16px;" class="w-11/12 panel mx-auto my-2">
+                  Covidga qarshi bir neshta vaksinalr turlari mavjud bo’lib
+                  ularni birortasiyam foydali emasdur shuning uchun ko’zizzi
+                  qisib o’tirvurin. Shu pulga marojni ob yesez yaxshi boladi
+                  kamro gapirib korpro o’tlen. Kamro yeb ko’pro harakat
+                  qiling. Shunday qilib qunduz bobo ertaklari...
                 </h1>
               </div>
 
@@ -655,7 +657,7 @@
       </div>
     </section>
     <section>
-      <div class="section__3__gridd w-11/12 mx-auto">
+      <div class="ill__gridd w-11/12 mx-auto">
         <div class="illustrator__box ">
           <!-- illustrator -->
           <!-- 1- illustrator /-->
@@ -822,7 +824,7 @@
             <!-- labaratoriya -->
             <div class="card__4 mt-12 md:mt-32">
               <div class="space-y-6">
-                <h1 class="card__h1__labaratories ml-3 ">Labaratories</h1>
+                <h1 class="card__h1__labaratories ml-3 pt-4 ">Labaratories</h1>
                 <div class="flex justify-between Labaratories__div items-center">
                   <h1 class="staatliches__fonts card__number__labaratories font-semibold ml-3">
                     24
