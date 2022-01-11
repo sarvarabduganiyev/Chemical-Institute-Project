@@ -10,7 +10,9 @@
   width: 303px;
   height: 245px;
 }
-
+.rahbariyat__text__card  {
+  width: 330px;
+}
 .rahbariyat__card {
   background: #cdcdcd;
   box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
@@ -20,11 +22,17 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 16px;
   color: #000;
-  line-height: 28px;
+  line-height: 20px;
   text-align: center;
 }
+.rahbariyat__qator1{
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .bosh__sahifa__size {
   font-size: 25px;
 }
@@ -65,7 +73,7 @@
   .rahbariyat__card__shrift {
     font-size: 15px;
     color: #000;
-    line-height: 23px;
+    /* line-height: 23px; */
   }
 }
 @media(max-width:500px){
