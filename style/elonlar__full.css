@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+
+.elon__full__sarlavha{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+color: #006F9E;
+}
+.elon__full__text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+color: #000000;
+}
+.elon__full__data{
+  font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 23px;
+color: #006F9E;
+}
+.elon__full__prosmotor{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #006F9E;
+}
+.elon__full__prosmotor__eye{
+  width: 20px;
+  height: 20px;
+}
+@media(max-width:768px) {
+  
+.elon__full__sarlavha{
+  font-size: 21px;
+  line-height: 26px;
+  }
+  .elon__full__text{
+  font-size: 15px;
+  line-height: 20px;
+  }
+  .elon__full__data{
+  font-size: 15px;
+  line-height: 20px;
+  }
+  .elon__full__prosmotor{
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .elon__full__prosmotor{
+    width: 10px;
+    height: 10px;
+  }
+}

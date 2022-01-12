@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+.elon__sarlavha{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39,84px;
+    font-style: normal;
+    color: #006F9E;
+}
+.elon__text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    font-style: normal;
+}
+.elon__data{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-style: normal;
+    color: #006F9E;
+}
+.elon__prosmotor{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 16px; */
+    font-style: normal;
+    color: #006F9E;
+}
+.elon__batfsilWord{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: #006F9E;
+}
+.elon__line{
+    width: 100%;
+    height: 1px;
+    background:#006F9E;
+}
+
+.__qator3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.__qator2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  .__qator1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  /* Arrow */
+  .arrow__number__style{
+    background: #CCCCCC;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .arrow__2__l{
+    width: 38px; height: 31px;
+  }
+  .arrow__1__l{
+    width: 38px; height: 31px;
+  }
+  .bir1{
+    width: 42px;
+    height: 37px; background: #2290DF; color: white;
+  }
+  .ikki2{
+    width: 42px;
+    height: 37px;
+  }
+  .uch3{
+    width: 42px;
+    height: 37px;
+  }
+  .arrow__1__r{
+    width: 38px;
+    height: 31px;
+  }
+  .arrow__2__r{
+    width: 38px;
+    height: 31px;
+  }
+  .elon__eye__svg{
+      width: 23px;
+      height: 23px;
+  }
+  /* Arrow TUGASHI */
+
+  @media(max-width:464px){
+   
+    .arrow__2__l{
+      width: 32px; height: 26px;
+    }
+    .arrow__1__l{
+      width: 32px; height: 26px;
+    }
+    .bir1{
+      width: 35px;
+      height: 30px; 
+      background: #2290DF; 
+      color: white;
+    }
+    .ikki2{
+      width: 35px;
+      height: 30px;
+    }
+    .uch3{
+      width: 35px;
+      height: 30px; 
+    }
+    .arrow__1__r{
+      width: 32px; height: 26px;
+    }
+    .arrow__2__r{
+      width: 32px; height: 26px;
+    }
+
+
+    .elon__sarlavha{
+      
+        font-size: 20px;
+        line-height: 24px;
+       
+    }
+    .elon__text{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .elon__data{
+    
+        font-size: 15px;
+        line-height: 18px;
+      
+    }
+    .elon__prosmotor{
+      
+        font-size: 13px;
+        line-height: 15px;
+       
+    }
+    .elon__batfsilWord{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .elon__eye__svg{
+        width: 20px;
+        height: 20px;
+    }
+    /* .elon__line{
+        width: 100%;
+        height: 1px;
+        background:#006F9E;
+    } */
+  }
