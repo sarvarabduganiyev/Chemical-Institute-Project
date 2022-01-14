@@ -11,6 +11,9 @@
   border-radius: 11.1111px;
   overflow: hidden;
 }
+.news__full__full__img{
+  height: 450px;
+}
 .news__data{
   font-family: 'Ubuntu';
   font-style: normal;
@@ -140,7 +143,9 @@
   .grid__75{
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .news__full__full__img{
+    height: 200px;
+  }
   .arrow__2__l{
     width: 32px; height: 26px;
   }
