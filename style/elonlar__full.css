@@ -60,4 +60,10 @@ color: #006F9E;
     width: 10px;
     height: 10px;
   }
+  .bosh__sahifa__nomi__text{
+    display: none;
+  }
+  .footer__tarmoqlar{
+    width: 10px;
+  }
 }
