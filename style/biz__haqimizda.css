@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sarala:wght@400;700&display=swap');
+.biz__card{
+    background: #CCCCCC;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 40% calc(60% - 10px);
+    gap: 10px;
+}
+.biz__card__2{
+    background: #CCCCCC;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: calc(60% - 10px) 40% ;
+    gap: 10px;
+    margin-top: 50px;
+}
+.biz__card__img__div{
+    height:600px
+}
+
+.biz__card__img__div__img{
+    border-radius: 50px;
+}
+.biz__sarlavha{
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 35px;
+}
+.__qator1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.__qator2{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.__qator12{
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.biz__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    margin-top: 35px;
+    height: 300px;
+}
+@media(max-width:1064px) {
+    .biz__card{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 0;
+    }
+    .biz__card__2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .biz__card__img__div{
+        height:500px;
+        width: 100%;
+    }
+    .biz__text{
+        margin: 10px 0px;
+    }
+    .biz__card__img__div__img{
+        padding: 10px;
+        border-radius: 30px;
+    }
+  
+}
+@media(max-width:462px) {
+    .biz__card__img__div{
+        height:300px;
+        width: 100%;
+    }
+}

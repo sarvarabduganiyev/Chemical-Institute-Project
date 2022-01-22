@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Sarala:wght@400;700&display=swap');
+
+.work__card{
+    background: #5C98F2FF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.work__card:hover{
+    background: #0B49A6;
+}
+
+
+.work__card__line{
+    height: 1px;
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.work__card__sarlavha{
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: translateY(-100px);
+}
+.work__card__telephone__number{
+    font-family: 'Sarala';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    color: #FFFFFF;
+    
+}
+
+.work__card__data{
+    font-family: Sarala;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+.word__card__circle{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    transform: translateY(-170px);
+}
+.__qator4{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.__qator1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.__qator2{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+/* ARROW */
+.arrow__number__style{
+    background: #CCCCCC;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .arrow__2__l{
+    width: 38px; height: 31px;
+  }
+  .arrow__1__l{
+    width: 38px; height: 31px;
+  }
+  .bir1{
+    width: 42px;
+    height: 37px;
+  }
+  .arrow__active{
+    background: #2290DF;
+    color: white;
+  }
+  .ikki2{
+    width: 42px;
+    height: 37px;
+  }
+  .uch3{
+    width: 42px;
+    height: 37px;
+  }
+  .arrow__1__r{
+    width: 38px;
+    height: 31px;
+  }
+  .arrow__2__r{
+    width: 38px;
+    height: 31px;
+  }
+  
+/* ARROW TUGASHI */
+
+@media(max-width:1011px){
+    .work__card__sarlavha{
+        font-size: 15px;
+        line-height: 25px;
+     
+    }
+    .work__card__telephone__number{
+        font-size: 12px;
+        line-height: 33px;       
+    }
+    .work__card__data{
+        font-size: 12px;
+        line-height: 33px;
+       
+    }
+  
+}
+    @media(max-width:815px){
+        .work__parent__div{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media(max-width:628px){
+        .work__parent__div{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .work__card__sarlavha{
+            font-size: 20px;
+            line-height: 30px;
+            transform: translateY(-105px);
+        }
+        .work__card__telephone__number{
+            font-size: 12px;
+            line-height: 33px;       
+        }
+        .work__card__data{
+            font-size: 12px;
+            line-height: 33px;
+           
+        }
+    }
+    

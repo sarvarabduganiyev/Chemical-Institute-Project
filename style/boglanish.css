@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sarala:wght@400;700&family=Ubuntu:wght@400;500&display=swap');
+.boglanish__form{
+    background-color: #F1F1F1FF;
+}
+.qayta__boglanish{  
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 21.5876px;
+line-height: 43px;
+}
+.boglanish__line{
+    width: 175.62px;
+    height: 2px;
+    background-color: #000;
+}
+.ism__input,.email__input{
+    outline: none;
+    border-bottom: 2px solid #000;
+    background-color: #F1F1F1FF;
+    width: 240px;
+}
+.ism__input::placeholder,.email__input::placeholder,.tel__input::placeholder,.textarea__form::placeholder{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+color: rgba(0, 0, 0, 0.2);
+}
+.tel__input{
+    outline: none;
+    border-bottom: 2px solid #000;
+    background-color: #F1F1F1FF;
+    width: 100%
+}
+.textarea__form{
+    outline: none;
+    border-bottom: 2px solid #000;
+    background-color: #F1F1F1FF;
+    width: 100%;
+    resize: none;
+}
+.form__submit{
+    background: #F1F1F1;
+    border: 2.19526px solid #000000;
+    box-shadow: 0px 2.19526px 2.92701px rgba(0, 0, 0, 0.3);
+    border-radius: 7.31752px;
+    padding: 2px 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+@media(max-width:1176px){
+    .ism__email__parent_div{
+        flex-direction: column;
+    }
+    .email__input{
+        margin-top: 20px;
+    }
+}
+   
+@media(max-width:768px){
+        .qayta__boglanish{
+            padding: 0 10px;
+            font-size: 15px;
+            line-height: 30px;
+        }
+    }       

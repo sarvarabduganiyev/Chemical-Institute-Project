@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sarala:wght@400;700&family=Ubuntu:wght@400;500&display=swap');
+.work__full__grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #A49D9D;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 20px 20px 20px;
+}
+.work__full__boglanish{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+ 
+}
+.work__full__glavniy__img{
+    height: 300px;
+}
+.work__full__tell{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+}
+.work__full__data{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #414141;
+}
+.work__full__sarlavha{
+    
+font-family: 'Roboto';
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 29px;
+color: #000000;
+}
+.work__full__line{
+    height: 1px;
+    background-color: #000000;
+}
+.work__full__savol{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.work__full__javob{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    color: #4F5154;
+    }
+    .work__full__qisqacha{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #000000;
+    }
+    .work__full__qisqacha__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #646669;
+    }
+    .work__full__hr{
+        background: black;
+        padding: 0.5px;
+        width: 100%;
+    }
+    
+.__qator5{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.__qator1{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media(max-width:883px){ 
+    .work__full__grid{   
+        grid-template-columns:repeat(1, 1fr);
+        border-radius: 0px 0px 20px 20px;
+    }
+    .work__full__glavniy__img{
+        height: 500px;
+    }   
+}
+@media(max-width:639px) {
+    .work__full__glavniy__img{
+        height: 300px;
+    }  
+    .arrow2{
+        padding: 30px 0px;
+    }
+
+    .grid__ikkinchi__qism{
+        padding-top: 30px;
+    }
+      .work__full__boglanish{
+      
+        font-size: 18px;
+        line-height: 28px;
+        margin: 2px 0;
+     
+    }
+    .work__full__tell{
+          
+            font-size: 18px;
+            line-height: 28px;
+    }
+    .work__full__data{
+        
+        font-size: 18px;
+        line-height: 28px;
+        
+    }
+    .work__full__sarlavha{
+    font-size: 20px;
+    line-height: 25px;
+    }
+    .work__full__savol{
+   
+        font-size: 18px;
+        line-height: 20px;
+     
+    }
+    .work__full__javob{
+    
+        font-size: 18px;
+        line-height: 20px;
+    
+        }
+        .work__full__qisqacha{
+        font-size: 18px;
+        line-height: 22px;
+        }
+        .work__full__qisqacha__text{
+        font-size: 15px;
+        line-height: 20px;
+        }
+}
+
+@media(max-width:450px) {
+    .work__full__glavniy__img{
+        height: 250px;
+    }
+    .work__full__sarlavha{
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 20px;
+        }
+}
+

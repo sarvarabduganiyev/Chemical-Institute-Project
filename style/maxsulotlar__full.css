@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap');
+.gridFoiz{
+  display: grid;
+  grid-template-columns:calc(75% - 40px) 25%;
+  gap: 40px;
+  align-items: start;
+}
+.maxsulotlar__full__card__maxsulot__name{
+    background: #FFFFFF;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.songi__news{
+  font-size: 25px;
+  line-height: 28.73px;
+}
+.songi__news__text{
+  font-family: Ubuntu;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  
+}
+.news__hr{
+  background: #0041BE;
+  height: 1px;
+}
+.__qator2{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.__qator3{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.__qator1{
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.maxsulotlar__news__covid__sarlavha{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 29px;
+color: #00489D;
+}
+.maxsulotlar__full__a__tags{
+    padding: 8px 23px;
+    background: #799DC7;
+    border-radius: 15px;
+    font-family: 'Ubuntu';
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+}
+.maxsulotlar__full__a__tags__active{
+    background: #00489D;
+    border: 3px solid #2581C4;
+}
+.maxsulotlar__full__paragraf{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* Media  */
+
+@media(max-width:816px) {
+  .gridFoiz{
+    display: flex;
+   flex-direction: column;
+    align-items: initial;
+  }
+  
+}
+@media(max-width:468px) {
+    .maxsulotlar__full__a__tags__parent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .maxsulotlar__full__a__tags{
+        margin: 8px;
+        
+    }
+}
+@media(max-width:464px){
+  .grid__75{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
