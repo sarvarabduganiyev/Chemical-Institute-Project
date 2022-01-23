@@ -4,8 +4,11 @@
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
     border-radius: 23px;
     margin: 0px 20px 20px 0px;
-    float: left;
-    width:330px
+    /* float: left; */
+    width:330px;
+}
+.rahbariyat__full__matn__div{
+    float: right;
 }
 .rahbariyat__full__sarlavha{
     font-family: 'Roboto';
@@ -15,6 +18,7 @@
     line-height: 35px;
     color: #00489D;
 }
+
 /* .rahbariyat__full__left__card__word{
     font-size: 30px;
     line-height: 49px;
