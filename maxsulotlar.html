@@ -18,21 +18,21 @@
 <body>
   <div>
     <header>
-      <div class="
-            w-11/12
-            mx-auto
-            md:mt-2
-            gerb__header
-            flex
-            justify-between
-            items-center
-          ">
+      <div
+        class="w-11/12 mx-auto md:mt-2 gerb__header flex justify-between items-center"
+      >
         <!-- emblema va nom -->
         <div class="flex justify-center space-x-3 items-center">
-          <img class="emblem cursor-pointer" src="./img/Emblem_of_Uzbekistan 1.png" alt="gerb" />
+          <img
+            class="emblem cursor-pointer"
+            src="./img/Emblem_of_Uzbekistan 1.png"
+            alt="gerb"
+          />
           <div class="universitet__name">
-            <a href="#" class="block header__h1">Uzbekistan chemical Institute</a>
-            <a href="#" class="header__p block">
+            <a href="./index.html" class="block header__h1"
+              >Uzbekistan chemical Institute</a
+            >
+            <a href="./index.html" class="header__p block">
               O’zbekiston kimyo texnologiyalari Instituti
             </a>
           </div>
@@ -42,9 +42,16 @@
         <div>
           <form class="flex header__form" action="search">
             <div class="flex justify-center items-center">
-              <input type="text" placeholder="Search..." class="header__input outline-none rounded-l-xl" />
-              <img class="cursor-pointer header__search__svg rounded-r-xl" src="./img/majesticons_search-line.png"
-                alt="" />
+              <input
+                type="text"
+                placeholder="Search..."
+                class="header__input outline-none rounded-l-xl"
+              />
+              <img
+                class="cursor-pointer header__search__svg rounded-r-xl"
+                src="./img/majesticons_search-line.png"
+                alt=""
+              />
             </div>
           </form>
         </div>
@@ -53,43 +60,70 @@
           <!-- telefon, email -->
           <div class="flex space-x-3">
             <img src="./img/carbon_phone-voice.png" alt="tel" />
-            <a style="color:#00489D;" class="ubuntu__fonts" href="tel:+998901257007">+99890 125 70 07</a>
+            <a
+              style="color: #00489d"
+              class="ubuntu__fonts"
+              href="tel:+998901257007"
+              >+99890 125 70 07</a
+            >
           </div>
           <div class="flex space-x-3">
             <img src="./img/fluent_mail-24-regular.png" alt="mail" />
-            <a style="color:#00489D;" class="ubuntu__fonts"
-              href="mailto:habibullayev.1997@mail.ru">habibullayev.1997@mail.ru</a>
+            <a
+              style="color: #00489d"
+              class="ubuntu__fonts"
+              href="mailto:habibullayev.1997@mail.ru"
+              >habibullayev.1997@mail.ru</a
+            >
           </div>
           <!-- telefon, email tugashi -->
         </div>
         <div class="space-y-1 flex justify-center items-center">
-          <div class="
-                flex flex-col
-                justify-center
-                space-y-1
-                items-center
-                tillarUzbRus
-              ">
-            <!-- <a href="#" class="header__uzb">UZB</a>
-            <a href="#" class="header__rus">РУС</a> -->
-            <form class="header__lang header__lang--active" action="{% url 'set_language' %}" method="post">
-              <!-- {% csrf_token %} -->
-              <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+          <div
+            class="flex flex-col justify-center space-y-1 items-center tillarUzbRus"
+          >
+            <form
+              class="header__lang header__lang--active"
+              action="{% url 'set_language' %}"
+              method="post"
+            >
+              <input
+                name="next"
+                type="hidden"
+                value="{{ request.get_full_path|slice:'3:' }}"
+              />
               <input name="language" type="hidden" value="uz" />
               <input class="header__lang-link" type="submit" value="Uz" />
             </form>
-            <form class="header__lang" action="{% url 'set_language' %}" method="post">
-              <!-- {% csrf_token %} -->
-              <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+            <form
+              class="header__lang"
+              action="{% url 'set_language' %}"
+              method="post"
+            >
+              <input
+                name="next"
+                type="hidden"
+                value="{{ request.get_full_path|slice:'3:' }}"
+              />
               <input name="language" type="hidden" value="ru" />
               <input class="header__lang-link" type="submit" value="Ru" />
             </form>
           </div>
           <div>
             <button class="hamburger">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             </button>
           </div>
@@ -98,84 +132,101 @@
       <div class="w-11/12 mt-3 mx-auto md:flex justify-between items-center">
         <div class="menus">
           <ul class="flex menusUl space-x-2">
-            <li class="menu__size header__li__active relative herder__li py-1 ">
-              <div class="
-                    flex
-                    space-x-3
-                    universitet__menu
-                    px-1
-                    justify-center
-                    items-center
-                  ">
+            <li
+              class="menu__size header__li__active relative herder__li py-1"
+            >
+              <div
+                class="flex space-x-3 universitet__menu px-1 justify-center items-center"
+              >
                 <a class="pl-1 roboto__fonts" href="#">Universitet</a>
-                <img class="w-4 h-3 arrow1" src="./img/arrow.png" alt="arrow" />
+                <img
+                  class="w-4 h-3 arrow1"
+                  src="./img/arrow.png"
+                  alt="arrow"
+                />
               </div>
-              <div class="
-                    rounded-r-2xl
-                    py-2
-                    universitet-select__div
-                    rounded-b-2xl
-                    absolute
-                    z-10
-                    hidden
-                    mt-1
-                    bg-white
-                  ">
+              <div
+                class="rounded-r-2xl py-2 universitet-select__div rounded-b-2xl absolute z-10 hidden mt-1 bg-white"
+              >
                 <ul class="space-y-3 w-60">
                   <li>
-                    <a class="text-black roboto__fonts pl-2 py-1 universitet-select" href="#">Biz haqimizda</a>
+                    <a
+                      class="text-black roboto__fonts pl-2 py-1 universitet-select"
+                      href="./index.html"
+                      >Biz haqimizda</a
+                    >
                   </li>
                   <li>
-                    <a class="text-black pl-2 roboto__fonts py-1 universitet-select" href="#">Jurnal</a>
+                    <a
+                      class="text-black pl-2 roboto__fonts py-1 universitet-select"
+                      href="./jurnal.html"
+                      >Jurnal</a
+                    >
                   </li>
                   <li>
-                    <a class="text-black roboto__fonts pl-2 py-1 universitet-select" href="#">Ilmiy kengash</a>
+                    <a
+                      class="text-black roboto__fonts pl-2 py-1 universitet-select"
+                      href="./ilmiy__kengash.html"
+                      >Ilmiy kengash</a
+                    >
                   </li>
                   <li>
-                    <a class="text-black roboto__fonts pl-2 py-1 universitet-select" href="#">Rasmdagi lavhalar</a>
+                    <a
+                      class="text-black roboto__fonts pl-2 py-1 universitet-select"
+                      href="./fotogalaraya.html"
+                      >Rasmdagi lavhalar</a
+                    >
                   </li>
                 </ul>
               </div>
             </li>
             <li class="menu__size herder__li roboto__fonts py-1 px-2 rounded">
-              <a href="#">Rahbariyat</a>
+              <a href="./rahbariyat.html">Rahbariyat</a>
             </li>
             <li class="menu__size herder__li roboto__fonts py-1 px-2 rounded">
-              <a href="#">Yangiliklar</a>
+              <a href="./news.html">Yangiliklar</a>
             </li>
             <li class="menu__size herder__li roboto__fonts py-1 px-2 rounded">
-              <a href="#">E’lonlar</a>
+              <a href="./elonlar.html">E’lonlar</a>
             </li>
             <li class="menu__size herder__li roboto__fonts py-1 px-2 rounded">
-              <a href="#">Maxsulotlar</a>
+              <a href="./maxsulotlar.html">Maxsulotlar</a>
             </li>
             <li class="menu__size herder__li roboto__fonts py-1 px-2 rounded">
-              <a href="#">Hujjatlar</a>
+              <a href="./hujjatlar.html">Hujjatlar</a>
             </li>
             <li class="menu__size herder__li roboto__fonts py-1 px-2 rounded">
-              <a href="#">Ish O’rinlari</a>
+              <a href="./ish__orinlari.html">Ish O’rinlari</a>
             </li>
             <li class="menu__size herder__li roboto__fonts py-1 px-2 rounded">
-              <a href="#">Bog’lanish</a>
+              <a href="./boglanish.html">Bog’lanish</a>
             </li>
-            <div class="
-                  flex
-                  space-x-2
-                  justify-center
-                  items-center
-                  tillarUzbRus__menuda
-                ">
-              <!-- <a href="#" class="header__uzb ubuntu__fonts">UZB</a>
-              <a href="#" class="header__rus ubuntu__fonts">РУС</a> -->
-              <form class="header__lang header__lang--active" action="{% url 'set_language' %}" method="post">
-                <!-- {% csrf_token %} -->
-                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+            <div
+              class="flex space-x-2 justify-center items-center tillarUzbRus__menuda"
+            >
+              <form
+                class="header__lang header__lang--active"
+                action="{% url 'set_language' %}"
+                method="post"
+              >
+                <input
+                  name="next"
+                  type="hidden"
+                  value="{{ request.get_full_path|slice:'3:' }}"
+                />
                 <input name="language" type="hidden" value="uz" />
                 <input class="header__lang-link" type="submit" value="Uz" />
               </form>
-              <form class="header__lang" action="{% url 'set_language' %}" method="post">
-                <!-- {% csrf_token %} -->
-                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+              <form
+                class="header__lang"
+                action="{% url 'set_language' %}"
+                method="post"
+              >
+                <input
+                  name="next"
+                  type="hidden"
+                  value="{{ request.get_full_path|slice:'3:' }}"
+                />
                 <input name="language" type="hidden" value="ru" />
                 <input class="header__lang-link" type="submit" value="Ru" />
               </form>
@@ -184,11 +235,17 @@
               <!-- telefon, email -->
               <div class="flex">
                 <img src="./img/carbon_phone-voice.png" alt="tel" />
-                <a class="ubuntu__fonts" href="tel:+998901257007">+99890 125 70 07</a>
+                <a class="ubuntu__fonts" href="tel:+998901257007"
+                  >+99890 125 70 07</a
+                >
               </div>
               <div class="flex">
                 <img src="./img/fluent_mail-24-regular.png" alt="mail" />
-                <a class="ubuntu__fonts" href="mailto:habibullayev.1997@mail.ru">habibullayev.1997@mail.ru</a>
+                <a
+                  class="ubuntu__fonts"
+                  href="mailto:habibullayev.1997@mail.ru"
+                  >habibullayev.1997@mail.ru</a
+                >
               </div>
               <!-- telefon, email tugashi -->
             </div>
@@ -225,7 +282,7 @@
                   <p class="__qator5">Smart Sensor Body Temperature Ring.</p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                  <a href="#" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
+                  <a href="./maxsulotlar__full.html" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -244,7 +301,7 @@
                     sit assumenda laboriosam cum, sint autem suscipit perferendis quae sequi. </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                  <a href="#" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
+                  <a href="./maxsulotlar__full.html" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -263,7 +320,7 @@
                     sit assumenda laboriosam cum, sint autem suscipit perferendis quae sequi. </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                  <a href="#" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
+                  <a href="./maxsulotlar__full.html" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -282,7 +339,7 @@
                     sit assumenda laboriosam cum, sint autem suscipit perferendis quae sequi. </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                  <a href="#" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
+                  <a href="./maxsulotlar__full.html" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -301,7 +358,7 @@
                     sit assumenda laboriosam cum, sint autem suscipit perferendis quae sequi. </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                  <a href="#" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
+                  <a href="./maxsulotlar__full.html" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
@@ -316,7 +373,7 @@
                   <p class="__qator5"> perferendis quae sequi. </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                  <a href="#" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
+                  <a href="./maxsulotlar__full.html" class=" text-center maxsulotlar__card__button hover:underline">ПОДРОБНЕЕ</a>
                 </div>
               </div>
             </div>
